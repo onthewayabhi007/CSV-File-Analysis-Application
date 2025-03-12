@@ -51,16 +51,12 @@ This application allows users to upload CSV files and perform various analytical
 5. **Query Data with LLM:** Use natural language to ask questions under the 'LLM Query' tab.
 
 ## Challenges and Solutions
-- **Global Variable Management:** Initially faced issues with data persistence across different modules. Solved by using a global variable to store the uploaded DataFrame.
-- **Data Loading Errors:** Encountered issues with loading files through Gradio. Addressed by correctly handling file paths and using Gradio’s file object handling.
-- **LLM Query Confusion:** The model initially generated vague answers. Improved responses by refining the input prompt and using statistical methods directly from the data.
-- **Gradio and Ollama Integration Issues:** Faced problems where responses appeared correctly in Jupyter Notebook but not in the Gradio interface. Solved by ensuring consistent API endpoint configuration and proper integration between Ollama and Gradio.
-- **Dependency Management:** Managing various libraries and their versions caused conflicts. Solved by using a virtual environment and specifying exact versions in `requirements.txt`.
+- **Global Variable Management:** Initially faced issues with data persistence across different modules which is solved by using a global variable to store the uploaded DataFrame.
+- **Data Loading Errors:** Encountered issues with loading files through Gradio which was addressed by correctly handling file paths and using Gradio’s file object handling.
+- **Gradio and Ollama Integration Issues:** Faced problems where responses appeared correctly in Jupyter Notebook but not in the Gradio interface. Resolved it by ensuring consistent API endpoint configuration and proper integration between Ollama and Gradio.
+- **Dependency Management:** Managing various libraries and their versions caused conflicts, resolved them by using a virtual environment and specifying exact versions in `requirements.txt`.
 - **Server Configuration Errors:** Faced server connectivity issues when running the Ollama server. Resolved by checking firewall settings and ensuring that the correct port was being used.
-- **Latency Issues:** The response time for LLM queries was initially slow. Optimized performance by streamlining data processing and minimizing unnecessary calculations.- **Global Variable Management:** Initially faced issues with data persistence across different modules. Solved by using a global variable to store the uploaded DataFrame.
-- **Data Loading Errors:** Encountered issues with loading files through Gradio. Addressed by correctly handling file paths and using Gradio’s file object handling.
-- **LLM Query Confusion:** The model initially generated vague answers. Improved responses by refining the input prompt and using statistical methods directly from the data.
-- **Gradio and Ollama Integration Issues:** Faced problems where responses appeared correctly in Jupyter Notebook but not in the Gradio interface. Solved by ensuring consistent API endpoint configuration and proper integration between Ollama and Gradio.
+- **Latency Issues:** The response time for LLM queries was initially slow. Optimized performance by streamlining data processing and minimizing unnecessary calculations.-
 
 ## Models and Techniques
 1. **Data Analysis:** Pandas for data manipulation and basic statistics.
@@ -75,4 +71,4 @@ This application allows users to upload CSV files and perform various analytical
 - **Accuracy of Answers:** Some responses from the LLM model may lack precision or relevance. Fine-tuning the model or employing post-processing techniques might improve the accuracy and consistency of answers.
 
 ## Contributing
-Feel free to submit issues, fork the repository, and make pull requests. Contributions are always welcome!
+Feel free to submit issues, fork the repository, and make pull requests.
