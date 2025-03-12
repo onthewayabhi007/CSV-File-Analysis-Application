@@ -22,7 +22,7 @@ This application allows users to upload CSV files and perform various analytical
 ## Installation
 1. Clone the repository from GitHub:
    ```bash
-   git clone https://github.com/yourusername/csv_analysis_app.git
+   git clone https://github.com/onthewayabhi007/CSV-File-Analysis-Application.git
    cd csv_analysis_app
    ```
 2. Create and activate a virtual environment:
